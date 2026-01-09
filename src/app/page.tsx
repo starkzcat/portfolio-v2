@@ -1,5 +1,8 @@
+import Education from "@/components/Education/page";
+import Experience from "@/components/Experience/page";
 import Links from "@/components/Links/page";
 import { ModeToggle } from "@/components/ModeToggle/page";
+import RecentProjects from "@/components/RecentProjects/page";
 import TechStack from "@/components/TechStacks/page";
 import Top from "@/components/Top/page";
 
@@ -11,9 +14,9 @@ export default function Home() {
         <Top />
         <Links />
         <TechStack />
-        {/* <div className="flex flex-col text-base font-medium sm:flex-row">
-          <h3>Hellooo</h3>
-        </div> */}
+        <RecentProjects />
+        <Experience />
+        <Education />
       </main>
     </div>
   );
