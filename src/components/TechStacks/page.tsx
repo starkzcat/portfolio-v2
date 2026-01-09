@@ -45,8 +45,8 @@ export default function TechStack() {
     },
   ]
   return (
-    <div className="w-full flex flex-col gap-2 mt-10">
-      <h3 className='font-medium'>Current tech stacks</h3>
+    <div className="w-full flex flex-col gap-2 mt-5">
+      <h3>Current tech stacks</h3>
       <div className="flex grid-cols-5 flex-wrap items-center gap-5 md:mt-2 md:grid md:justify-between">
         {stacks.map((stack, index) => (
           <div key={index} className="group flex items-center justify-center gap-2 rounded-md border p-1 dark:bg-background md:flex-col md:border-0 md:p-0 md:dark:bg-transparent">
