@@ -8,8 +8,8 @@ import Top from "@/components/Top/page";
 
 export default function Home() {
   return (
-    <div className="flex h-500 bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-2xl flex-col mx-auto py-18 px-16 bg-zinc-50 dark:bg-black sm:items-start gap-5">
+    <div className="flex flex-col bg-white font-sans dark:bg-[#0a0a0a]">
+      <main className="flex min-h-screen w-full max-w-2xl flex-col mx-auto pt-18 pb-12 px-16 bg-white dark:bg-[#0a0a0a] sm:items-start gap-5">
         <ModeToggle />
         <Top />
         <Links />
@@ -18,6 +18,7 @@ export default function Home() {
         <Experience />
         <Education />
       </main>
+      <footer className="text-center text-sm mb-10 text-zinc-300">&copy; 2026 Andy Firmansyah</footer>
     </div>
   );
 }
