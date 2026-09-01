@@ -7,7 +7,7 @@ export default function Top() {
         Andy Firmansyah
       </h1>
       <p className="max-w-md text-xl font-medium leading-8 text-zinc-600 dark:text-zinc-300">
-        Full-Stack Developer
+        Software Developer
       </p>
       <p className="max-w-md text-md text-zinc-600 dark:text-zinc-300">
         East Java, Indonesia

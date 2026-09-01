@@ -3,26 +3,19 @@ import React from 'react'
 export default function Experience() {
   const experiences = [
     {
-      title: "Programmer Staff",
-      company: "Linkbot",
+      title: "Software Developer",
+      company: "Linkbot Pte. Ltd.",
       country: "Singapore (Remote)",
       type: "Full time",
-      date: "Jan 2025 - present"
+      date: "Jul 2024 - present"
     },
     {
-      title: "Software Programmer",
-      company: "Linkbot",
-      country: "Singapore (Remote)",
-      type: "Intern",
-      date: "Jul 2024 - Jan 2025"
-    },
-    {
-      title: "Web Developer",
-      company: "BAPENDA Jember",
-      country: "Indonesia",
-      type: "Intern",
-      date: "Jun - Aug 2023"
-    },
+      title: "Junior Fullstack Developer",
+      company: "Catalyst Inertia (Catatia)",
+      country: "Bali, Indonesia (Remote)",
+      type: "Contract",
+      date: "May - Aug 2026"
+    }
   ]
   return (
     <div className="w-full flex flex-col gap-2 mt-5">
