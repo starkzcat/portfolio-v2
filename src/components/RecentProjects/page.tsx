@@ -2,9 +2,17 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from "../ui/button"
 import { ExternalLinkIcon, Github } from "lucide-react"
+import Link from 'next/link'
 
 export default function RecentProjects() {
   const projects = [
+    {
+      name: "CashMatee",
+      imagePath: "/projects/cashmatee.webp",
+      description: "A personal finance tracker and analytics dashboard with interactive cash flow charts, expense breakdowns, and budget goals.",
+      githubLink: "https://github.com/starkzcat/financial-tracker",
+      projectLink: "https://cashmatee.vercel.app/",
+    },
     {
       name: "SIMABA",
       imagePath: "/projects/simaba.webp",
@@ -28,13 +36,25 @@ export default function RecentProjects() {
         {projects.map((project, idx) => (
           <div key={idx}>
             <div className="flex items-center rounded-sm overflow-hidden h-70 md:h-44 mb-2 md:mb-0">
-              <Image src={project.imagePath} alt="hehe" width={500} height={500} className="h-full w-full object-cover" />
+              <Image src={project.imagePath} alt={project.name} width={500} height={500} className="h-full w-full object-cover" />
             </div>
             <div className="flex justify-between items-center">
               <h4 className="font-semibold">{project.name}</h4>
               <div className="flex gap-0.5">
-                <Button variant="ghost" size="icon"><Github /></Button>
-                <Button variant="ghost" size="icon"><ExternalLinkIcon /></Button>
+                {project.githubLink ? (
+                  <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    <Button variant="ghost" size="icon"><Github /></Button>
+                  </Link>
+                ) : (
+                  <Button variant="ghost" size="icon" disabled><Github /></Button>
+                )}
+                {project.projectLink ? (
+                  <Link href={project.projectLink} target="_blank" rel="noopener noreferrer">
+                    <Button variant="ghost" size="icon"><ExternalLinkIcon /></Button>
+                  </Link>
+                ) : (
+                  <Button variant="ghost" size="icon" disabled><ExternalLinkIcon /></Button>
+                )}
               </div>
             </div>
             <div>

@@ -1,48 +1,68 @@
 import React from 'react'
-import { NextJsLogo, ExpressJsLogo, HtmlLogo, CssLogo, NodeLogo, TypescriptLogo, TailwindLogo, ReactLogo, SupabaseLogo, LaravelLogo } from '@/components/Logos'
+import { NextJsLogo, ExpressJsLogo, HtmlLogo, CssLogo, NodeLogo, TypescriptLogo, TailwindLogo, ReactLogo, SupabaseLogo, LaravelLogo, JavascriptLogo, WordPressLogo, CanvaLogo, FigmaLogo, N8nLogo } from '@/components/Logos'
 
 export default function TechStack() {
   const stacks = [
+    {
+      logo: <HtmlLogo />,
+      title: "HTML"
+    },
+    {
+      logo: <CssLogo />,
+      title: "CSS"
+    },
+    {
+      logo: <JavascriptLogo />,
+      title: "JavaScript"
+    },
+    {
+      logo: <TypescriptLogo />,
+      title: "TypeScript"
+    },
     {
       logo: <NextJsLogo />,
       title: "Next.js"
     },
     {
       logo: <ReactLogo />,
-      title: "React.js"
+      title: "React"
     },
     {
-      logo: <ExpressJsLogo />,
-      title: "Express.js"
+      logo: <WordPressLogo />,
+      title: "WordPress"
     },
     {
-      logo: <NodeLogo />,
-      title: "Node.js"
+      logo: <N8nLogo />,
+      title: "n8n"
     },
     {
-      logo: <HtmlLogo />,
-      title: "HTML5"
+      logo: <CanvaLogo />,
+      title: "Canva"
     },
     {
-      logo: <CssLogo />,
-      title: "CSS3"
+      logo: <FigmaLogo />,
+      title: "Figma"
     },
-    {
-      logo: <TypescriptLogo />,
-      title: "Typescript"
-    },
-    {
-      logo: <TailwindLogo />,
-      title: "TailwindCSS"
-    },
-    {
-      logo: <SupabaseLogo />,
-      title: "Supabase"
-    },
-    {
-      logo: <LaravelLogo />,
-      title: "Laravel"
-    },
+    // {
+    //   logo: <ExpressJsLogo />,
+    //   title: "Express.js"
+    // },
+    // {
+    //   logo: <NodeLogo />,
+    //   title: "Node.js"
+    // },
+    // {
+    //   logo: <TailwindLogo />,
+    //   title: "TailwindCSS"
+    // },
+    // {
+    //   logo: <SupabaseLogo />,
+    //   title: "Supabase"
+    // },
+    // {
+    //   logo: <LaravelLogo />,
+    //   title: "Laravel"
+    // },
   ]
   return (
     <div className="w-full flex flex-col gap-2 mt-5">

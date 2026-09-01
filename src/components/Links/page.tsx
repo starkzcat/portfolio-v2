@@ -7,7 +7,7 @@ export default function Links() {
   return (
     <div className="flex items-center gap-5">
 
-      <Link href={"/cv.pdf"} target="_blank"><Button><FileUser />Resume</Button></Link>
+      <Link href={"/cv_andy.pdf"} target="_blank"><Button><FileUser />Resume</Button></Link>
       <Link href={"https://github.com/starkzcat/"}><Github /></Link>
       <Link href={"https://www.linkedin.com/in/andy-firmansyah/"}><Linkedin /></Link>
       <Link href={"mailto:andyfirmansyah2667@gmail.com"}><Mail /></Link>
